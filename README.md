@@ -5,18 +5,18 @@
 - `git clone https://github.com/JohnLi1999/cpsc304_demo.git`
 
 ## 配置数据库
-- 在MySQL WorkBench里创建一个`cpsc304_demo`数据库
-    - 或者在任意地方运行这个SQL
-        - `CREATE DATABASE cpsc304_demo`
+- 在MySQL WorkBench里手动创建一个`cpsc304_demo`数据库
+- 或者复制然后运行下面这个SQL
+    - `CREATE DATABASE cpsc304_demo`
 
 ## 如何运行这个Project
 - 用intellij IDEA打开项目，点击运行键(下面图上的绿色按钮)
     ![Run](img/run.png)
 - 或者用command line
-    - ```
-        cd cpsc304_demo
-        ./gradlew bootRun 
-      ```
+-   ```
+    cd cpsc304_demo
+    ./gradlew bootRun
+    ```
       
 ## 运行成功会显示
 ![Succes](img/success.png)
