@@ -1,6 +1,6 @@
 # Demo for CPSC 304 Project
 
-## 如何打开这个Project
+## 如何使用这个Project
 - 用你们自己的Github账号(不是学校的)
 - `git clone https://github.com/JohnLi1999/cpsc304_demo.git`
 
@@ -19,4 +19,7 @@
     ```
       
 ## 运行成功会显示
-![Succes](img/success.png)
+1. IDEA里面显示这些信息
+    ![Idea](img/idea.png)
+2. 然后打开browser，输入这个url `http://localhost:8080`，按下回车之后能自动跳转到这样的login界面就是运行成功了
+    ![Browser](img/browser.png)
