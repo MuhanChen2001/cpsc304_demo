@@ -29,6 +29,18 @@ public class Performance {
         this.attendanceNumber = attendanceNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Performance{" +
+                "id=" + id +
+                ", year='" + year + '\'' +
+                ", month='" + month + '\'' +
+                ", date='" + date + '\'' +
+                ", showing='" + showing + '\'' +
+                ", attendanceNumber=" + attendanceNumber +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }
