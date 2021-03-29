@@ -7,14 +7,24 @@ public class PerformanceAttendanceByDate {
     private String year;
     private String month;
     private String date;
-    private Integer totalAttendance;
+    private Long totalAttendance;
 
-    public PerformanceAttendanceByDate(Object[] objects) {
-        this.year = (String) objects[0];
-        this.month = (String) objects[1];
-        this.date = (String) objects[2];
-        this.totalAttendance =  ((BigDecimal) objects[3]).intValue();
+    public PerformanceAttendanceByDate() {
     }
+
+    public PerformanceAttendanceByDate(String year, String month, String date, Long totalAttendance) {
+        this.year = year;
+        this.month = month;
+        this.date = date;
+        this.totalAttendance = totalAttendance;
+    }
+
+//    public PerformanceAttendanceByDate(Object[] objects) {
+//        this.year = (String) objects[0];
+//        this.month = (String) objects[1];
+//        this.date = (String) objects[2];
+//        this.totalAttendance =  ((BigDecimal) objects[3]).intValue();
+//    }
 
     @Override
     public String toString() {
@@ -50,11 +60,7 @@ public class PerformanceAttendanceByDate {
         this.date = date;
     }
 
-    public Integer getTotalAttendance() {
-        return totalAttendance;
-    }
-
-    public void setTotalAttendance(Integer totalAttendance) {
+    public PerformanceAttendanceByDate(Long totalAttendance) {
         this.totalAttendance = totalAttendance;
     }
 }

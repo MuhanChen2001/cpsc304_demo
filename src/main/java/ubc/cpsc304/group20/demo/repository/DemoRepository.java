@@ -21,4 +21,9 @@ public interface DemoRepository extends JpaRepository<Performance, Long> {
                     "GROUP BY year, month, date",
             nativeQuery = true)
     List<Object[]> getPerformanceAttendanceByDate();
+
+    @Query( value = "SELECT new ubc.cpsc304.group20.demo.wrapper.PerformanceAttendanceByDate(p.year, p.month, p.date, SUM(p.attendanceNumber)) " +
+                    "FROM Performance AS p " +
+                    "GROUP BY p.year, p.month, p.date")
+    List<PerformanceAttendanceByDate> getPerformanceAttendanceByDate2();
 }
